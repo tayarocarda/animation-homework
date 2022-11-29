@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation</title>
+    <style media="screen">
+    .emoji {
+       width: 86px;
+       height: 81px;
+       display: block;
+       position: relative;
+       background: url('images/sprite2.png');
+     }
+     .emoji-m {
+       width: 86px;
+       height: 81px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/sprite2.png');
+       background-position: 85px 0;
+     }
+     .emoji-e {
+       width: 86px;
+       height: 81px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/sprite2.png');
+       background-position: 177px 0;
+     }
+     .emoji-f {
+       width: 86px;
+       height: 81px;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: url('images/sprite2.png');
+       background-position: 269px 0;
+     }
+     .oji {
+       width: 84px;
+       height: 77px;
+       display: block;
+       position: absolute;
+       top: 240px;
+       left: 5px;
+       background: url('images/sprite8.png');
+       background-position: 0 0;
+     }
+     .oji-m {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 240px;
+       left: 5px;
+       background: url('images/sprite8.png');
+       background-position: 110px 0;
+     }
+     .oji-e {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 240px;
+       left: 5px;
+       background: url('images/sprite9.png');
+       background-position: 220px 0;
+     }
+     .oji-f {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 240px;
+       left: 5px;
+       background: url('images/sprite9.png');
+       background-position: 330px 0;
+     }
+     .moji {
+       width: 84px;
+       height: 77px;
+       display: block;
+       position: absolute;
+       top: 120px;
+       left: 5px;
+       background: url('images/sprite3.png');
+       background-position: 0 0;
+     }
+     .moji-m {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 120px;
+       left: 5px;
+       background: url('images/sprite3.png');
+       background-position: 110px 0;
+     }
+     .moji-e {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 120px;
+       left: 5px;
+       background: url('images/sprite3.png');
+       background-position: 220px 0;
+     }
+     .moji-f {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 120px;
+       left: 5px;
+       background: url('images/sprite3.png');
+       background-position: 330px 0;
+     }
+     .ji {
+       width: 84px;
+       height: 77px;
+       display: block;
+       position: absolute;
+       top: 360px;
+       left: 5px;
+       background: url('images/sprite11.png');
+       background-position: 0 0;
+     }
+     .ji-m {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 360px;
+       left: 5px;
+       background: url('images/sprite11.png');
+       background-position: 110px 0;
+     }
+     .ji-e {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 360px;
+       left: 5px;
+       background: url('images/sprite11.png');
+       background-position: 220px 0;
+     }
+     .ji-f {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 360px;
+       left: 5px;
+       background: url('images/sprite11.png');
+       background-position: 330px 0;
+     }
+     .i {
+       width: 84px;
+       height: 77px;
+       display: block;
+       position: absolute;
+       top: 480px;
+       left: 5px;
+       background: url('images/sprite12.png');
+       background-position: 0 0;
+     }
+     .i-m {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 480px;
+       left: 5px;
+       background: url('images/sprite12.png');
+       background-position: 110px 0;
+     }
+     .i-e {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 480px;
+       left: 5px;
+       background: url('images/sprite12.png');
+       background-position: 220px 0;
+     }
+     .i-f {
+       width: 84px;
+       height: 79px;
+       display: block;
+       position: absolute;
+       top: 480px;
+       left: 5px;
+       background: url('images/sprite12.png');
+       background-position: 330px 0;
+     }
+     .smile {
+        animation: mouth 1s steps(1) alternate infinite;
+      }
+     .mouth {
+        animation: mouth 1s steps(1) alternate infinite;
+      }
+      .blush {
+         animation: mouth 1s steps(1) alternate infinite;
+       }
+       .twinkle {
+          animation: mouth 1s steps(1) alternate infinite;
+        }
+        .money {
+           animation: mouth 1s steps(1) alternate infinite;
+         }
+      @keyframes mouth {
+       0% {background-position: 85px 0;}
+       33% {background-position: 177px 0;}
+       66% {background-position: 269px 0;}
+      }
+      @keyframes smile {
+       0% {background-position: 110px 0;}
+       66% {background-position: 200px 0;}
+      }
+      @keyframes blush {
+       0% {background-position: 110px 0;}
+       33% {background-position: 200px 0;}
+       66% {background-position: 300px 0;}
+      }
+      @keyframes twinkle {
+       0% {background-position: 110px 0;}
+       33% {background-position: 200px 0;}
+       66% {background-position: 300px 0;}
+      }
+      @keyframes money {
+       0% {background-position: 110px 0;}
+       33% {background-position: 200px 0;}
+       66% {background-position: 300px 0;}
+      }
+      </style>
+  </head>
+  <body>
+   <div class="emoji mouth">
+    <div class="emoji-e"></div>
+    <div class="emoji-m mouth"></div>
+    <div class="emoji-f mouth"></div>
+   </div>
+   <div class="moji smile">
+   </div>
+   <div class="oji blush">
+   </div>
+   <div class="ji twinkle">
+   </div>
+   <div class="i money">
+   </div>
+  </body>
+</html>
